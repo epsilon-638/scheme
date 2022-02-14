@@ -7,5 +7,5 @@ ghc -package parsec -o parser parser.hs
 ```bash
 ./parser "(+ 4 5 (* 8 9) (/ 2 4))"
 ```
-### Outpus
+### Output
 `81`
