@@ -5,10 +5,10 @@ import Text.ParserCombinators.Parsec hiding (spaces)
 
 data LispVal = Atom String
              | List [LispVal]
-					   | DottedList [LispVal] LispVal
-			       | Number Integer
-				     | String String
-			       | Bool Bool
+             | DottedList [LispVal] LispVal
+             | Number Integer
+             | String String
+             | Bool Bool
 
 main :: IO ()
 main = getArgs >>= putStrLn . showVal . eval . readExpr . (!! 0)
